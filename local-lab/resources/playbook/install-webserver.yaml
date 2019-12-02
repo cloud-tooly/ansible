@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - name: install haproxy
+      apt:
+        name: haproxy
+        state: latest
