@@ -1,6 +1,5 @@
 # About 
 
-
 ## Core Components of Ansible
 
 * Inventories: locate and run across multiple systems
@@ -94,7 +93,7 @@ all:
 
 #### Variables in Inventory files?
 
-Ansible recommends that variables not be defined in inventory files. Instead store variables in a seperate file YAML files in `group_vars` or `host_vars` directories. These directores are to be located relative to inventory files.
+Ansible recommends that variables not be defined in inventory files. Instead store variables in a separate file YAML files in `group_vars` or `host_vars` directories. These directories are to be located relative to inventory files.
 
 
 
@@ -102,11 +101,11 @@ TODO: Siddu add more examples and do it step by step
 
 ### Modules
 
-Modules are essentially tools for particular tasks. There are lot built in modules for ansible.  You can template your configurations and use them to push them onto targets.  Modules accept parameters. Modules return JSON responses.  Modules are from command line or from a playbook. 
+Modules are essential tools for particular tasks. There are lots of built-in modules for ansible.  You can template your configurations and use them to push them onto targets.  Modules accept parameters. Modules return JSON responses.  Modules are from the command line or a playbook. 
 
 ### Variables
 
-Variable should always start with a alphabet can be scope to a group, host or event a playbook. Variables are used for configuration values and various parameters. Variables can also be dictionaries.
+Variables should always start with an alphabet can be scope to a group, host or event a playbook. Variables are used for configuration values and various parameters. Variables can also be dictionaries.
 
 ### Facts
 
@@ -157,7 +156,7 @@ target-1 | SUCCESS => {
 
 ### Plays and Playbooks
 
-A play may be use on or more modules to acheive a desired end state on a group of hosts. A playbook is a series of plays. A playbook may deploy new servers (web / database), run sql scripts or deployments to support the new application.
+A play may be used in one or more modules to achieve the desired end state on a group of hosts. A playbook is a series of plays. A playbook may deploy new servers (web/database), run SQL scripts or deployments to support the new application.
 
 ### Configuration Files
 
@@ -212,20 +211,20 @@ For instance: we can timeouts on ssh, ssh passwords, ssh users, inventory defaul
 
 __What is an ad-hoc command in Ansible?__
 
-Both ad-hoc commands playbooks have same capabilities. Ad-hoc commands are effectively one-liner. These for 
+Both ad-hoc commands playbooks have similar capabilities. Ad-hoc commands are effectively one-liner. These for 
 
 (a) Operational commands: 
   (a) checking log contents, network operators, quick production checks.
   (b) Daemon control: for stop and start a specific daemon on a specific target.
   (c) Process management: evaluate CPU or Memory consumption of a process.
-(b) Information commands: checking installed software, system propertices.
-(c) Research: gaining familarity of modules that we will be using when engineering playbooks.
+(b) Information commands: checking installed software, system properties.
+(c) Research: gaining familiarity of modules that we will be using when engineering playbooks.
 
 __Use-cases for ad-hoc commands__ahoc vs Playbook__
 
-`ansible` is the command for execute a ansible command. Similar to a sigle bash command.
+`ansible` is the command for execute a ansible command. Similar to a single bash command.
 
-`ansible-playbook` is the command for running a playbook. These are effectively used for deployments, routing taks and system deployment (new nodes, et al). Similar to a bash script.
+`ansible-playbook` is the command for running a playbook. These are effectively used for deployments, routing tasks and system deployment (new nodes, et al). Similar to a bash script.
 
 __Common modules__
 
